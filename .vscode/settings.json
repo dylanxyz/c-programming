@@ -5,5 +5,13 @@
         "**/*.html": true,
         "**/*_files/": true,
         "**/_extensions": true,
+    },
+    "files.associations": {
+        "*.mdx": "markdown",
+        "*.css": "tailwindcss",
+        "*.pcss": "scss",
+        "*.json5": "jsonc",
+        ".packwizignore": "ignore",
+        "stdio.h": "c"
     }
 }
