@@ -1,1 +1,5 @@
 /bin
+/docs/**/*_files
+/docs/**/*.html
+/docs/**/*.pdf
+_extensions

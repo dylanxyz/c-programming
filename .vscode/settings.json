@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/*.pdf": true,
+        "**/*.html": true,
+        "**/*_files/": true,
+        "**/_extensions": true,
+    }
+}

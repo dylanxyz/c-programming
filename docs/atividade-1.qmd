@@ -1,0 +1,268 @@
+---
+title: "Atividade - Introdução a Programação em C"
+author:
+    - name: Jorge Aparício de Brito Pereira
+      affiliation: "Matrícula: 202308385021"
+format:
+  html:
+    css: style.css
+editor:
+    render-on-save: true
+filters:
+   - add-code-files
+---
+
+::: {style="height: 48px;"} :::
+
+## Parte I
+
+### Questão 1
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-1.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1(["Início"])        -->
+    2["int A, B, Soma;"] -->
+    3["/A, B/"]          -->
+    4["Soma = A + B;"]   -->
+    5("Soma")            -->
+    6(["Fim"])
+```
+
+:::
+
+### Questão 2
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-2.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1(["Início"]) -->
+    2["int numero"] -->
+    3[/"numero"/] -->
+    4{numero > 0}-- "VERDADEIRO" --> R1("POSITIVO")
+    4-- "FALSO" --> 5{"numero < 0"}-- "VERDADEIRO" -->R2("NEGATIVO")
+    5-- "FALSO" --> R3("ZERO")
+    R1 & R2 & R3 --> 6(["Fim"])
+```
+
+:::
+
+### Questão 3
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-3.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int idade] -->
+    3[/idade/] -->
+    4{idade < 18}
+    4 -- VERDADEIRO --> R1(MENOR DE IDADE)
+    4 -- FALSO --> R2(MAIOR DE IDADE)
+    R1 & R2 --> N([Fim])
+```
+
+:::
+
+### Questão 4
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-4.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int a, b, c, max] -->
+    3[/a, b, c/] -->
+    4[max = a] -->
+    5{b > max} -- VERDADEIRO --> 6[max = b]
+    5 --> 7{c > max} -- VERDADEIRO --> 8[max = c]
+    5 & 7 --> 9(max) -->
+    N([Fim])
+```
+
+:::
+
+### Questão 5
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-5.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int n] --> 3[/n/] -->
+    4[int i = 1] --> 5(i * n) -->
+    6[i += 1] -->
+    7{i <= 10} -- VERDADEIRO --> 5
+    7 -- FALSO --> N([Fim])
+```
+
+:::
+
+### Questão 6
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-6.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int i = 1, soma = 0] -->
+    3[int valor = 0] -->
+    4[/valor/] -->
+    5[soma += valor] -->
+    6[i += 1] -->
+    7{i <= 5} -- VERDADEIRO --> 3
+    7 -- FALSO --> 8[float media = soma / 5.0f] -->
+    9(media) --> N([Fim])
+```
+
+:::
+
+### Questão 7
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-7.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int nota = 0] -->
+    3[/nota/] -->
+    4{nota < 3} -- VERDADEIRO --> A(REPROVADO)
+    4 -- FALSO --> 5{nota < 6} -- VERDADEIRO --> B(RECUPERAÇÃO)
+    5 -- FALSO --> C(APROVADO)
+    A & B & C --> 0([Fim])
+```
+
+:::
+
+### Questão 8
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-8.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int valor = 0] -->
+    3[/valor/] -->
+    4{valor % 2 == 0}
+    4 -- VERDADEIRO --> A(PAR)
+    4 -- FALSO --> B(ÍMPAR)
+    A & B --> 0([Fim])
+```
+
+:::
+
+### Questão 9
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-1/questao-9.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+    1([Início]) -->
+    2[int ano, idade] -->
+    3[/ano/] -->
+    4[idade = 2024 - ano] -->
+    5{idade < 18} -- VERDADEIRO --> A(MENOR DE IDADE)
+    5 -- FALSO --> B(MAIOR DE IDADE)
+    A & B --> 0([Fim])
+```
+
+:::
+
+### Questão 10
+
+::: {add-from="../src/atividade-1/questao-:.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart LR
+    1([Início]) -->
+    2[int numero] -->
+    3[/numero/] -->
+    4{{switch numero}}
+    4 --> C1{1} -- VERDADEIRO --> A(DOMINGO)
+    C2{2} -- VERDADEIRO --> B(SEGUNDA)
+    C3{3} -- VERDADEIRO --> C(TERÇA)
+    C4{4} -- VERDADEIRO --> D(QUARTA)
+    C5{5} -- VERDADEIRO --> E(QUINTA)
+    C6{6} -- VERDADEIRO --> F(SEXTA)
+    C7{7} -- VERDADEIRO --> G(SÁBADO)
+
+    C1 -- FALSO --> C2
+    C2 -- FALSO --> C3
+    C3 -- FALSO --> C4
+    C4 -- FALSO --> C5
+    C5 -- FALSO --> C6
+    C6 -- FALSO --> C7
+
+    A & B & C & D & E & F & G --> 0([Fim])
+```
+
+## Parte II
+
+1. **_Verdadeiro_**
+2. **_Falso_**
+3. **_Verdadeiro_**
+4. **_Verdadeiro_**
+5. **_Verdadeiro_**
+6. **_Falso_**
+7. **_Falso_**
+8. **_Verdadeiro_**
+9. **_Falso_**
+10. **_Verdadeiro_**
+
+## Parte III
+
+::: {.callout-tip title="Resposta"}
+Alternativa: **_A_**
+:::
+
+---
