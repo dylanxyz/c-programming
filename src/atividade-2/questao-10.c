@@ -15,9 +15,8 @@ int main()
     scanf("%d", &n);
     printf("\n");
 
-    // TODO: Fix this
     for (int k = 0; k < n; k++)
-        soma += (k % 2 == 0 ? 1 : -1) / (2*k + 1);
+        soma += (k % 2 == 0 ? 1.0f : -1.0f) / (2*k + 1);
 
     pi = 4 * soma;
     printf("Aproximação de pi com %d termos: %.8f\n", n, pi);
