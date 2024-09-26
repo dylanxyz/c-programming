@@ -1,0 +1,49 @@
+---
+title: "Atividade - Introdução a Programação em C"
+author:
+    - name: Jorge Aparício de Brito Pereira
+      affiliation: "Matrícula: 202308385021"
+format:
+  html:
+    css: style.css
+editor:
+    render-on-save: true
+filters:
+   - add-code-files
+---
+
+::: {style="height: 48px;"} :::
+
+## Questão 1
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-2/questao-1.c"}
+```c
+```
+:::
+
+```{mermaid}
+flowchart TD
+  1([Início]) -->
+  2[int n = 0, soma = 0, i = 1] -->
+  3[/n/] -->
+  4[soma += i] -->
+  5[i += 1] -->
+  6{i <= n}
+  6 --TRUE--> 4
+  6 --FALSE-->7(soma)-->0([Fim])
+```
+
+:::
+
+## Questão 2
+
+::: {.row .pagebreak}
+
+::: {add-from="../src/atividade-2/questao-2.c"}
+```c
+```
+:::
+
+:::

@@ -13,5 +13,7 @@
         "*.json5": "jsonc",
         ".packwizignore": "ignore",
         "stdio.h": "c"
-    }
+    },
+
+    "files.autoSave": "off",
 }
