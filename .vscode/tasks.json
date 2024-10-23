@@ -5,22 +5,33 @@
             "type": "shell",
             "label": "Compilar",
             "command": "/usr/bin/g++",
-            "args": ["-g", "${relativeFile}", "-o", "bin/${fileBasenameNoExtension}"],
-            "problemMatcher": ["$gcc"],
-            "dependsOn": ["Setup"],
+            "args": [
+                "-g",
+                "${relativeFile}",
+                "-o",
+                "bin/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": [
+                "Setup"
+            ],
             "dependsOrder": "sequence"
         },
         {
             "label": "Compilar & Executar",
             "type": "shell",
             "command": "bin/${fileBasenameNoExtension}",
-            "dependsOn": ["Compilar"],
+            "dependsOn": [
+                "Compilar"
+            ],
             "dependsOrder": "sequence",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         },
         {
             "label": "Setup",
