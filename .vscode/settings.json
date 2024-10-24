@@ -12,7 +12,8 @@
         "*.pcss": "scss",
         "*.json5": "jsonc",
         ".packwizignore": "ignore",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c"
     },
 
     "files.autoSave": "off",
